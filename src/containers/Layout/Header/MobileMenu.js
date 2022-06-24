@@ -16,9 +16,9 @@ const MobileMenu = ({ className }) => {
   return (
     <Menu className={className}>
       <Menu.Item key="0">
-        <NavLink to={HOME_PAGE}>Hotels</NavLink>
+        <NavLink to={HOME_PAGE}>Home</NavLink>
       </Menu.Item>
-      <Menu.Item key="1">
+      {/* <Menu.Item key="1">
         <NavLink to={LISTING_POSTS_PAGE}>Listing</NavLink>
       </Menu.Item>
       <Menu.Item key="2">
@@ -33,7 +33,7 @@ const MobileMenu = ({ className }) => {
         <Menu.Item key="4">
           <button onClick={logOut}>Log Out</button>
         </Menu.Item>
-      )}
+      )} */}
     </Menu>
   );
 };

@@ -11,11 +11,11 @@ const Footer = () => {
           withLink
           linkTo="/"
           src="/images/logo-alt.svg"
-          title="TripFinder."
+          title="myholidaywa"
         />
       }
       menu={<FooterMenu />}
-      copyright={`Copyright @ ${new Date().getFullYear()} RedQ, Inc.`}
+      copyright={`Copyright @ ${new Date().getFullYear()} [].`}
     />
   );
 };

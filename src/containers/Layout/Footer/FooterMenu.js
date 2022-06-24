@@ -17,7 +17,7 @@ const FooterMenu = () => {
         <NavLink to={`${HOME_PAGE}`}>Hotels</NavLink>
       </Menu.Item>
       <Menu.Item key="1">
-        <NavLink to={`${LISTING_POSTS_PAGE}`}>Listing</NavLink>
+        <NavLink to={`${LISTING_POSTS_PAGE}`}>Properties</NavLink>
       </Menu.Item>
       <Menu.Item key="2">
         <NavLink to={`${PRICING_PLAN_PAGE}`}>Pricing</NavLink>

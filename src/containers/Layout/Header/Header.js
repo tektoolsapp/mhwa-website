@@ -60,22 +60,22 @@ export default function Header() {
           <Navbar
             logo={
               <>
-                {headerType === 'transparent' && <LogoIcon />}
+                {/* {headerType === 'transparent' && <LogoIcon />} */}
                 <Logo
                   withLink
                   linkTo="/"
-                  src="/images/logo-alt.svg"
-                  title="TripFinder."
+                  src="/images/sunglasses-svgrepo-com.svg"
+                  title="myholidaywa"
                 />
               </>
             }
             navMenu={<MainMenu />}
-            authMenu={<AuthMenu />}
+            /* authMenu={<AuthMenu />} */
             isLogin={loggedIn}
             avatar={<Logo src={avatarImg} />}
             profileMenu={<ProfileMenu avatar={<Logo src={avatarImg} />} />}
             headerType={headerType}
-            searchComponent={<NavbarSearch />}
+            /* searchComponent={<NavbarSearch />} */
             location={location}
             searchVisibility={searchVisibility}
           />
@@ -83,15 +83,15 @@ export default function Header() {
           <MobileNavbar className={headerType}>
             <LogoArea>
               <>
-                {headerType === 'transparent' && <LogoIcon />}
+                {/* {headerType === 'transparent' && <LogoIcon />} */}
                 <Logo
                   withLink
                   linkTo="/"
                   src="/images/logo-alt.svg"
-                  title="TripFinder."
+                  title="myholidaywa"
                 />
               </>
-              <NavbarSearch />
+              {/* <NavbarSearch /> */}
             </LogoArea>
             <Button
               className={`hamburg-btn ${state ? 'active' : ''}`}
@@ -114,7 +114,7 @@ export default function Header() {
                   <IoIosClose />
                 </button>
               </CloseDrawer>
-              {loggedIn ? (
+              {/* {loggedIn ? (
                 <AvatarWrapper>
                   <AvatarImage>
                     <Logo src={avatarImg} />
@@ -129,7 +129,7 @@ export default function Header() {
                 </AvatarWrapper>
               ) : (
                 <AuthMenu className="auth-menu" />
-              )}
+              )} */}
               <MobileMenu className="main-menu" />
             </Drawer>
           </MobileNavbar>

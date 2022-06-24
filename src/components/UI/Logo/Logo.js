@@ -4,16 +4,17 @@ import { NavLink } from 'react-router-dom';
 import LogoArea from './Logo.style';
 
 const Logo = ({ className, withLink, linkTo, title, src }) => {
+  console.log('SVG: ', src);
   return (
     <LogoArea className={className}>
       {withLink ? (
         <NavLink to={linkTo}>
-          {src && <img src={src} alt="TripFinder." />}
+          {/* {src && <img src={src} alt="TripFinder." />} */}
           {title && <h3>{title}</h3>}
         </NavLink>
       ) : (
         <Fragment>
-          {src && <img src={src} alt="TripFinder." />}
+          {/* {src && <img src={src} alt="TripFinder." />} */}
           {title && <h3>{title}</h3>}
         </Fragment>
       )}

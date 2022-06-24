@@ -16,7 +16,7 @@ const LogoArea = styled.div`
 
   h3 {
     color: ${themeGet('primary.0', '#008489')};
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 20px;
     font-weight: 700;
     margin: 0 0 0 10px;

@@ -31,7 +31,7 @@ const SearchArea = ({ searchTitleStyle, searchDescriptionStyle }) => {
         </>
       </GlideCarousel>
 
-      <Container>
+      {/* <Container>
         <SearchWrapper>
           <Heading
             {...searchTitleStyle}
@@ -44,7 +44,7 @@ const SearchArea = ({ searchTitleStyle, searchDescriptionStyle }) => {
           />
           <SearchForm />
         </SearchWrapper>
-      </Container>
+      </Container> */}
     </BannerWrapper>
   );
 };

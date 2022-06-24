@@ -17,6 +17,7 @@ import SinglePageWrapper, { PostImage } from './SinglePageView.style';
 import PostImageGallery from './ImageGallery/ImageGallery';
 import useDataApi from 'library/hooks/useDataApi';
 import isEmpty from 'lodash/isEmpty';
+// import allData from './data/top-hotel.json';
 
 const SinglePage = () => {
   let { slug } = useParams();
@@ -24,7 +25,12 @@ const SinglePage = () => {
   const [isModalShowing, setIsModalShowing] = useState(false);
   const { width } = useWindowSize();
 
-  let url = '/data/hotel-single.json';
+  const allData = '/data/hotel.json';
+  // const { data } = useDataApi(allData);
+  // console.log('ALL DATA: ', data[0]);
+
+  // let url = '/data/hotel-single.json';
+  let url = allData;
   if (!slug) {
     url += slug;
   }
@@ -41,7 +47,9 @@ const SinglePage = () => {
     content,
     amenities,
     author,
-  } = data[0];
+  } = data[5];
+
+  console.log('DATA OBJECT: ', data[3]);
 
   return (
     <SinglePageWrapper>
