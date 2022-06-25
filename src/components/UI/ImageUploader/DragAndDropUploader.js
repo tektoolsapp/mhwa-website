@@ -33,6 +33,7 @@ const DragAndDropUploader = ({ name = 'file', onUploadChange }) => {
     name,
     multiple: true,
     action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
+    // action: 'http://localhost:3001/add-hotel',
     defaultFileList: photos,
     onChange(info) {
       const { status } = info.file;

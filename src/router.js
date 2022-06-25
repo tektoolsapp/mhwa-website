@@ -5,6 +5,7 @@ import Layout from 'containers/Layout/Layout';
 import Loader from 'components/Loader/Loader';
 import {
   HOME_PAGE,
+  TERMS_CONDITIONS_PAGE,
   LISTING_POSTS_PAGE,
   SINGLE_POST_PAGE,
   AGENT_PROFILE_PAGE,
@@ -16,10 +17,12 @@ import {
   REGISTRATION_PAGE,
   FORGET_PASSWORD_PAGE,
   ADD_HOTEL_PAGE,
+  ADD_PROPERTY_PAGE,
   AGENT_IMAGE_EDIT_PAGE,
   AGENT_PASSWORD_CHANGE_PAGE,
   AGENT_ACCOUNT_SETTINGS_PAGE,
 } from './settings/constant';
+import TermsConditions from 'containers/TermsConditions/TermsConditions';
 
 // protected route
 function RequireAuth({ children }) {
@@ -62,6 +65,9 @@ const NotFound = React.lazy(() => import('containers/404/404'));
 const AddListingPage = React.lazy(() =>
   import('containers/AddListing/AddListing')
 );
+const AddPropertyListingPage = React.lazy(() =>
+  import('containers/AddListing/AddPropertyListing')
+);
 const AgentAccountSettingsPage = React.lazy(() =>
   import('containers/Agent/AccountSettings/AgentAccountSettingsPage')
 );
@@ -84,6 +90,14 @@ export default function AppRoutes() {
           element={
             <React.Suspense fallback={<Loader />}>
               <HomePage />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path={TERMS_CONDITIONS_PAGE}
+          element={
+            <React.Suspense fallback={<Loader />}>
+              <TermsConditions />
             </React.Suspense>
           }
         />
@@ -178,14 +192,20 @@ export default function AppRoutes() {
             </React.Suspense>
           }
         />
+        <Route
+          path={ADD_PROPERTY_PAGE}
+          element={
+            <React.Suspense fallback={<Loader />}>
+              <AddPropertyListingPage />
+            </React.Suspense>
+          }
+        />
         {/* Protected routes */}
         <Route
           path={ADD_HOTEL_PAGE}
           element={
             <React.Suspense fallback={<Loader />}>
-              <RequireAuth>
-                <AddListingPage />
-              </RequireAuth>
+              <AddListingPage />
             </React.Suspense>
           }
         />

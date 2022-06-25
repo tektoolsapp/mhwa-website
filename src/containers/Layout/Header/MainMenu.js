@@ -4,6 +4,7 @@ import { Menu } from 'antd';
 
 import {
   HOME_PAGE,
+  TERMS_CONDITIONS_PAGE,
   // LISTING_POSTS_PAGE,
   // AGENT_PROFILE_PAGE,
   // PRICING_PLAN_PAGE,
@@ -14,6 +15,9 @@ const MainMenu = ({ className }) => {
     <Menu className={className}>
       <Menu.Item key="0">
         <NavLink to={HOME_PAGE}>Home</NavLink>
+      </Menu.Item>
+      <Menu.Item key="1">
+        <NavLink to={TERMS_CONDITIONS_PAGE}>Terms & Conditions</NavLink>
       </Menu.Item>
       {/* <Menu.Item key="1">
         <NavLink to={LISTING_POSTS_PAGE}>Listing</NavLink>

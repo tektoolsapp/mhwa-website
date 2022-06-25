@@ -20,13 +20,13 @@ const SearchArea = ({ searchTitleStyle, searchDescriptionStyle }) => {
       >
         <>
           <GlideSlide>
-            <img src="/images/banner/1.jpg" alt="Banner 1" />
+            <img src="/images/banner/scarborough-beach-2.jpg" alt="Banner 1" />
           </GlideSlide>
           <GlideSlide>
-            <img src="/images/banner/2.jpg" alt="Banner 2" />
+            <img src="/images/banner/scarborough-beach-1.jpg" alt="Banner 2" />
           </GlideSlide>
           <GlideSlide>
-            <img src="/images/banner/3.jpg" alt="Banner 3" />
+            <img src="/images/banner/scarborough-beach-4.jpg" alt="Banner 3" />
           </GlideSlide>
         </>
       </GlideCarousel>

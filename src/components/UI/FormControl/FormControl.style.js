@@ -157,9 +157,9 @@ const Wrapper = styled.div`
     padding-right: 28px;
     line-height: 1;
 
-    &::after {
+    /* &::after {
       content: none;
-    }
+    } */
   }
 `;
 
