@@ -1,22 +1,26 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu } from 'antd';
-import { AuthContext } from 'context/AuthProvider';
+// import { AuthContext } from 'context/AuthProvider';
 import {
   HOME_PAGE,
-  LISTING_POSTS_PAGE,
-  PRICING_PLAN_PAGE,
-  AGENT_ACCOUNT_SETTINGS_PAGE,
+  // LISTING_POSTS_PAGE,
+  TERMS_CONDITIONS_PAGE,
+  // PRICING_PLAN_PAGE,
+  // AGENT_ACCOUNT_SETTINGS_PAGE,
 } from 'settings/constant';
 
 const MobileMenu = ({ className }) => {
   // auth context
-  const { loggedIn, logOut } = useContext(AuthContext);
+  // const { loggedIn, logOut } = useContext(AuthContext);
 
   return (
     <Menu className={className}>
       <Menu.Item key="0">
         <NavLink to={HOME_PAGE}>Home</NavLink>
+      </Menu.Item>
+      <Menu.Item key="1">
+        <NavLink to={TERMS_CONDITIONS_PAGE}>Terms & Conditions</NavLink>
       </Menu.Item>
       {/* <Menu.Item key="1">
         <NavLink to={LISTING_POSTS_PAGE}>Listing</NavLink>

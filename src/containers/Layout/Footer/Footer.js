@@ -15,7 +15,7 @@ const Footer = () => {
         />
       }
       menu={<FooterMenu />}
-      copyright={`Copyright @ ${new Date().getFullYear()} [].`}
+      copyright={`Copyright @ ${new Date().getFullYear()} Howcroft etc.`}
     />
   );
 };

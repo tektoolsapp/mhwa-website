@@ -6,7 +6,7 @@ import Container from 'components/UI/Container/Container';
 import GlideCarousel, {
   GlideSlide,
 } from 'components/UI/GlideCarousel/GlideCarousel';
-import SearchForm from './SearchForm';
+// import SearchForm from './SearchForm';
 import BannerWrapper, { SearchWrapper } from './Search.style';
 
 const SearchArea = ({ searchTitleStyle, searchDescriptionStyle }) => {
@@ -31,7 +31,7 @@ const SearchArea = ({ searchTitleStyle, searchDescriptionStyle }) => {
         </>
       </GlideCarousel>
 
-      {/* <Container>
+      <Container>
         <SearchWrapper>
           <Heading
             {...searchTitleStyle}
@@ -42,9 +42,9 @@ const SearchArea = ({ searchTitleStyle, searchDescriptionStyle }) => {
             content="compares prices from 200+ booking sites to help you find the lowest
           price on the right hotel for you."
           />
-          <SearchForm />
+          {/* <SearchForm /> */}
         </SearchWrapper>
-      </Container> */}
+      </Container>
     </BannerWrapper>
   );
 };
